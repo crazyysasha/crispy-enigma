@@ -1,8 +1,10 @@
 <script setup>
+import SecondLineRow from './minicomponents/SecondLineRow.vue';
+import SecondLineBottom from './minicomponents/SecondLineBottom.vue';
 </script>
 
 <template>
-    <div class="container flex flex-col p-10 text-xl">
+    <div class="container flex flex-col p-10 text-xl gap-10">
         <div class="flex gap-32">
             <div class="font-PlusJakartaSans  flex flex-col gap-4">
                 <h1 class="text-3xl font-bold">Hi, Skylar Dias</h1>
@@ -47,10 +49,12 @@
                     </div>
                         <img src="src/assets/images/SecondLinePictures/diagramma.svg" alt="">
                     </div>
-                    <div class="bg-[#141522] rounded-lg text-white w-16 h-12">
+                    <div class="bg-[#141522] rounded-lg text-white w-16 h-12 ">
                         <p>2Tasks</p>
                     </div>
             </div>          
         </div>
+        <SecondLineRow></SecondLineRow>
+        <SecondLineBottom></SecondLineBottom>
     </div>
 </template>

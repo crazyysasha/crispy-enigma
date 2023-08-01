@@ -26,7 +26,7 @@ import FirstLineBottom from './minicomponents/FirstLineBottom.vue';
                 <a href="">Message</a>
            </div>
            <div class="flex gap-4">
-                <img src="src/assets/images/FirstLinePictures/setting-2.png" alt="">
+               <img src="src/assets/images/FirstLinePictures/setting-2.png" alt="">
                 <a href="">Settings</a>
            </div>
            
