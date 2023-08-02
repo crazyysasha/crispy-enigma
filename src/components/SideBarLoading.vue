@@ -9,23 +9,23 @@
     </div>
     <div class="animate-pulse">
     <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-200"
+      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
     >
     </div>
     <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-200"
+      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
     >
     </div>
     <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-200"
+      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
     >
     </div>
     <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-200"
+      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
     >
     </div>
     <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-200"
+      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
     >
     </div>
 </div>
