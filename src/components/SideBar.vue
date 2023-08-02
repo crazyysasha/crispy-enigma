@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar w-64 p-10 h-screen overflow-y-auto text-center bg-white">
+  <div class="sidebar w-64 p-10 overflow-y-auto text-center bg-white">
     <div class="text-gray-700 text-xl">
       <div class="p-2.5 mt-1 flex items-center">
         <img src="/src/components/icons/site_icon.svg" class="w-10 h-10" alt="" />
