@@ -1,5 +1,5 @@
 <template>
-  <div role="status" class="sidebar w-64 p-10 h-screen text-center bg-white">
+  <div role="status" class="sidebar w-64 p-10 text-center bg-white">
     <div class="text-gray-700 text-xl">
       <div class="p-2.5 mt-1 flex items-center">
         <img src="/src/components/icons/site_icon.svg" class="w-10 h-10" alt="" />
