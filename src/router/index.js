@@ -28,7 +28,7 @@ const router = createRouter({
         {
           path: '',
           name: 'login.redirect',
-          redirect: {name: 'login'}
+          redirect: { name: 'login' }
         },
         {
           path: 'login',
@@ -51,7 +51,17 @@ const router = createRouter({
       path: '/ui',
       name: 'test',
       component: () => import('../components/SideBarLoading.vue')
-    }
+    },
+    {
+      path: '/examples',
+      component: () => import('../views/ExamplesView.vue'),
+      children: [
+        {
+          path: 'carousel',
+          component: () => import('../views/examples/CarouselView.vue')
+        }
+      ],
+    },
   ]
 })
 
