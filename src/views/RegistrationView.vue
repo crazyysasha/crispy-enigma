@@ -16,7 +16,7 @@ import CInput from '../components/ui/c-input.vue'
     <div class="flex items-center h-5">
       <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-bg_gray_design rounded bg-gray-50 focus:ring-3 focus:bg-button_purple" required>
     </div>
-    <label for="terms" class="text-sm font-medium text-left ml-2">Я согласен с<a href="#" class="text-blue-600 hover:underline dark:text-blue-500"><br>пользовательским соглашением</a></label>
+    <label for="terms" class="text-sm font-medium text-left ml-2">Я согласен с<a href="#" class="text-Information-600 hover:underline"><br>пользовательским соглашением</a></label>
   </div>
           <c-button>
             Зарегистрироваться

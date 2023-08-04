@@ -10,17 +10,14 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'bg_gray_design': '#FAFAFA',
-        'text_purple': '#8E92BC',
-        'sidebar_gray_hover': '#141522',
-        'button_purple': '#546FFF',
+        'background': '#FAFAFA',
         "Primary": {
           "0": "#ffffff",
           "100": "#dce4ff",
           "200": "#bac8ff",
           "300": "#98abff",
           "400": "#7e95ff",
-          "500": "#546fff",
+          "500": "#546fff", /* color for 'button_purple' */
           "600": "#3d53db",
           "700": "#2a3bb7",
           "800": "#1a2793",
@@ -73,9 +70,9 @@ module.exports = {
          "Secondary": {
           "100": "#dfe1f3",
           "200": "#c2c6e8",
-          "300": "#8e92bc",
+          "300": "#8e92bc", /* color for 'text_purple' */
           "400": "#54577a",
-          "500": "#141522",
+          "500": "#141522", /* color for 'sidebar_gray_hover' */
           "600": "#0e0f1d",
           "700": "#0a0a18",
           "800": "#060713",

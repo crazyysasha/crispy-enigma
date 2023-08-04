@@ -20,7 +20,7 @@ import CInput from '../components/ui/c-input.vue'
         <p>
           Нет аккаунта?
           <router-link
-            class="text-text_purple mt-4 hover:text-button_purple"
+            class="text-Secondary-300 mt-4 hover:text-Primary-500"
             :to="{ name: 'registation' }"
             href=""
             >Регистрация</router-link
@@ -31,7 +31,7 @@ import CInput from '../components/ui/c-input.vue'
         </div>
         <div class="mt-6">
         <router-link
-          class="text-text_purple hover:text-red-500"
+          class="text-Secondary-300 hover:bg-Error-600"
           :to="{ name: 'reset' }"
           href=""
         >
