@@ -1,39 +1,42 @@
-<script></script>
+<script setup>
+import CInput from '../components/ui/c-input.vue'
+</script>
 
 <template>
-    <div class="flex min-h-screen justify-center items-center flex-1 p-8">
-      <form class="rounded-xl bg-white px-8 pt-6 pb-8 mb-4 sm:text-center" action="">
-        <div class="p-2.5 mt-1 flex items-center justify-center">
-          <img src="/src/components/icons/site_icon.svg" class="w-10 h-10" alt="" />
-          <h1 class="font-bold text-black text-4xl ml-3">CRM</h1>
+  
+      <form class="" action="">
+        <div class="mb-4 mt-4">
+          <c-input label="Логин" placeholder="xXx_DODO_xXx" ></c-input>
         </div>
         <div class="mb-4 mt-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
-          <input
-            class="appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:ring-button_purple focus:ring-4 outline-3 outline outline-bg_gray_design"
-            id="username"
-            type="text"
-            placeholder="Username"
-          />
+          <c-input type="password" label="Пароль" placeholder="*******"></c-input>
+          
+          <c-button>
+            Войти
+          </c-button>
         </div>
-        <div class="mb-4 mt-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
-          <input
-            class="appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:ring-button_purple focus:ring-4 outline-3 outline outline-bg_gray_design"
-            id="username"
-            type="password"
-            placeholder="********"
-          />
-        </div>
-        <button
-          class="mt-6 bg-button_purple rounded-3xl flex items-center justify-center h-12 px-6 w-64 text-white hover:bg-button_purple/60"
-        >
-          Sign in
-        </button>
-        <button class="text-text_purple mt-4 hover:text-button_purple">Registration</button>
-        <span class="mx-2 text-gray-300">/</span>
-        <button class="text-text_purple mt-4 hover:text-red-500">Forget Password?</button>
       </form>
-    </div>
+      <div class="mt-8 col-auto">
+        <p>
+          Нет аккаунта?
+          <router-link
+            class="text-text_purple mt-4 hover:text-button_purple"
+            :to="{ name: 'registation' }"
+            href=""
+            >Регистрация</router-link
+          >
+        </p>
+        <div class="items-center flex flex-col">
+          <div class="mt-6 w-20 h-1 rounded-xl bg-bg_gray_design"></div>
+        </div>
+        <div class="mt-6">
+        <router-link
+          class="text-text_purple hover:text-red-500"
+          :to="{ name: 'reset' }"
+          href=""
+        >
+          Забыли пароль?
+        </router-link>
+      </div>
+      </div>
 </template>
-<!-- йо чел доделай все нормально -->
