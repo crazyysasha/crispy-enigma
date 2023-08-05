@@ -1,7 +1,7 @@
 <script setup>
 import CCategory from '/src/components/ui/c-category.vue'
 import CCircle from '/src/components/ui/c-circle.vue'
-// import AvatarPath from '/src/components/icons/element_1.svg'
+// import AvatarPath from '/src/assets/icons/element_1.svg'
 </script>
 
 <template>
@@ -13,10 +13,10 @@ import CCircle from '/src/components/ui/c-circle.vue'
         class="rounded-full border-2 border-[#F5F5F7] w-14 h-14 justify-center items-center flex"
       >
           <div>
-            <img src="/src/components/icons/notification.svg" alt="" />
+            <img src="/src/assets/icons/notification.svg" alt="" />
           </div>
         </div>
-        <CCircle img="/src/components/icons/user_avatar.svg">
+        <CCircle img="/src/assets/icons/user_avatar.svg">
           </CCircle>
     </div>
     </div>
@@ -26,10 +26,10 @@ import CCircle from '/src/components/ui/c-circle.vue'
     >
       <div class="p-7 text-xs text-Secondary-400">Search Task</div>
       <div>
-        <img src="/src/components/icons/search_normal.svg" alt="" />
+        <img src="/src/assets/icons/search_normal.svg" alt="" />
       </div>
     </div>
-    <CCategory label="Category" img="/src/components/icons/element_1.svg">
+    <CCategory label="Category" img="/src/assets/icons/element_1.svg">
     </CCategory>
   </div>
 </div>

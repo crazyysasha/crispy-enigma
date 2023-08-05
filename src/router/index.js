@@ -50,7 +50,7 @@ const router = createRouter({
     {
       path: '/ui',
       name: 'test',
-      component: () => import('../components/SideBarLoading.vue')
+      component: () => import('../components/ui/HeaderMain.vue')
     },
     {
       path: '/examples',

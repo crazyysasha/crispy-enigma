@@ -1,8 +1,6 @@
 <script setup>
 
 import { ref, computed } from 'vue';
-// Import Swiper styles
-import 'swiper/css';
 
 const progress = ref(Math.random()*100);
 setTimeout(() => {
