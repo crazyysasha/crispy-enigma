@@ -54,7 +54,7 @@ const router = createRouter({
     {
       path: '/ui',
       name: 'test',
-      component: () => import('../components/ui/HeaderMain.vue')
+      component: () => import('../components/HeaderMainLoading.vue')
     },
     {
       path: '/examples',

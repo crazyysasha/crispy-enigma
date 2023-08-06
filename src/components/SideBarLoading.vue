@@ -8,26 +8,24 @@
       <div class="my-14"></div>
     </div>
     <div class="animate-pulse">
-    <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
-    >
+      <div class="w-36 h-3.5 justify-start items-center gap-3.5 inline-flex">
+  <div class="w-3.5 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
+  <div class="w-28 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
     </div>
-    <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
-    >
+    <div class="pt-10 w-36 h-3.5 justify-start items-center gap-3.5 inline-flex">
+  <div class="w-3.5 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
+  <div class="w-28 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
     </div>
-    <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
-    >
+    <div class="pt-10 w-36 h-3.5 justify-start items-center gap-3.5 inline-flex">
+  <div class="w-3.5 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
+  <div class="w-28 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
     </div>
-    <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
-    >
+    <div class="pt-10 w-36 h-3.5 justify-start items-center gap-3.5 inline-flex">
+  <div class="w-3.5 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
+  <div class="w-28 h-3.5 bg-indigo-500 bg-opacity-30 rounded-2xl"></div>
     </div>
-    <div
-      class="py-3 mt-6 w-40 h-12 flex items-center rounded-xl bg-gray-300"
-    >
-    </div>
+    
+    
 </div>
 </div>
 </template>
