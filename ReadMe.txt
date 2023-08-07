@@ -1,1 +1,0 @@
-https://www.figma.com/file/8LatBWFnqa2wDJvKKvCxH2/Task-Management-Dashboard---Pickolab-Studio-(Community)?type=design&node-id=2%3A2552&mode=dev
