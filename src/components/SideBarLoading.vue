@@ -2,7 +2,7 @@
   <div role="status" class="sidebar h-screen w-64 p-10 text-center bg-white">
     <div class="text-gray-700 text-xl">
       <div class="p-2.5 mt-1 flex items-center">
-        <img src="/src/components/icons/site_icon.svg" class="w-10 h-10" alt="" />
+        <img src="/src/assets/icons/site_icon.svg" class="w-10 h-10" alt="" />
         <h1 class="font-bold text-black text-4xl ml-3">CRM</h1>
       </div>
       <div class="my-14"></div>
