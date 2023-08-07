@@ -1,9 +1,4 @@
-<script setup>
-
-</script>
-
-<template>
-    <div>
-        this is home page
-    </div>
+template>
+  <div>
+  </div>
 </template>
