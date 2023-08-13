@@ -7,12 +7,14 @@ defineProps({
 
 
 <template>
-    <button class="px-7 py-3.5 border border-[#F5F5F7] rounded-xl flex w-max h-14">
+    <button class="px-7 h-12 py-3.5 border border-[#F5F5F7] rounded-xl text-xs items-center flex w-max ">
         <div>
-            <img :src="img" alt="">
+            <slot>
+                {{ img }}
+            </slot>
         </div>
         <div class="pl-3 text-center">
-        <slot>
+        <slot name="label">
             {{  label }}
         </slot>
         </div>

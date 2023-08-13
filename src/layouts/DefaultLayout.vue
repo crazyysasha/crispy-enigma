@@ -1,23 +1,24 @@
 <script setup>
-import SideBar from '../components/SideBar.vue';
-import TaskCarouselItem from '../components/tasks/carousel-item.vue'
-import HeaderMain from '../components/ui/HeaderMain.vue'
+import SideBar from '../components/ui/SideBar.vue'
+import SideBarLoading from '../components/loadingcomp/SideBarLoading.vue'
 import 'swiper/css/bundle'
-import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/vue'; // TODO: #14 не корректно работает Swiper 
-
+import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/vue' // TODO: #14 не корректно работает Swiper
 
 
 </script>
 
-
 <template>
-  <div class="flex">
-    <router-view />
-    <SideBar class="shrink-0" />
-    <div class="flex-col flex-1">
-    <HeaderMain />
+  <div class="flex gap-8 w-full">
+    <Suspense>
+      <template #default>
+        <SideBar class="shrink-0 sticky top-0" />
+      </template>
+      <template #fallback>
+        <SideBarLoading class="shrink-0 sticky top-0" />
+      </template>
+    </Suspense>
+      <router-view class="flex-1" />
+  
   </div>
-    </div>
-
 </template>

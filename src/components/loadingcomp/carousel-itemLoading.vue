@@ -1,10 +1,11 @@
 
 <script setup>
+import GalleryPlaceholder from '/src/assets/icons/gallery_placeholder.vue'
 </script>
 <template>
     <div class="bg-white p-6 rounded-xl max-w-sm">
-        <div class="border-2 w-[336px] h-[134px] rounded-xl items-center justify-center flex">
-        <img src="/src/assets/icons/gallery_placeholder.svg" alt="" class="w-10 h-10">
+        <div class="border-2 w-[280px] h-[110px] rounded-xl items-center justify-center flex">
+        <GalleryPlaceholder class="w-10 h-10" />
     </div>
         <div>
             <div class="w-40 h-4 bg-indigo-500 bg-opacity-30 rounded-2xl mt-4"></div>
