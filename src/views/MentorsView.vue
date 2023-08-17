@@ -4,6 +4,9 @@ import TaskCarouselItem from '../components/tasks/carousel-item.vue';
 import CSearch from '/src/components/ui/c-search.vue'
 import HeaderHomeLoading from '../components/loadingcomp/HeaderHomeLoading.vue';
 import TaskCarouselItemLoading from '/src/components/loadingcomp/carousel-itemLoading.vue'
+import CCategory from '../components/ui/c-category.vue';
+import ElementIcon from '../assets/icons/element_1.vue'
+import SortIcon from '../assets/icons/sort.vue'
 </script>
 <template>
 <div>
@@ -12,6 +15,18 @@ import TaskCarouselItemLoading from '/src/components/loadingcomp/carousel-itemLo
       <HeaderHome label="Ментаты" class="sticky top-0 bg-white border-[#F5F5F7] border-b-2">
         <template #search>
           <CSearch searchlabel="Искать Ментатов" />
+        </template>
+        <template #category>
+          <CCategory label="Категория">
+            <template #img>
+              <ElementIcon />
+            </template>
+          </CCategory>
+          <CCategory label="Сортировка по:">
+            <template #img>
+              <SortIcon />
+            </template>
+          </CCategory>
         </template>
         </HeaderHome>
     </template>

@@ -5,7 +5,8 @@ import MentorsIcon from '/src/assets/icons/mentors.vue'
 import MessageIcon from '/src/assets/icons/message.vue'
 import SettingsIcon from '/src/assets/icons/settings.vue'
 import SiteIcon from '/src/assets/icons/site_icon.vue'
-import { ref } from 'vue'
+import { onMounted,  } from 'vue'
+import { useRoute } from 'vue-router'
 
 const loadUserData = async () => {
   return new Promise((resolve) => {
@@ -15,6 +16,14 @@ const loadUserData = async () => {
   })
 }
 await loadUserData()
+
+
+const route = useRoute()
+
+onMounted(() => {
+  console.log(route.fullPath);
+})
+
 </script>
 
 <template>
@@ -29,13 +38,16 @@ await loadUserData()
       <div class="my-14"></div>
     </div>
     <router-link
-      to="/"
+      :to="{ name: 'home' }"
+      :class="{ '!bg-Secondary-500/5 !text-black': route.fullPath == '/' }"
       class="py-3 mt-6 flex text-Secondary-300 items-center text-sm font-bold fill-current cursor-pointer rounded-xl px-4 duration-300 hover:bg-Secondary-500/5 focus:bg-Secondary-500/5 focus:outline-none focus:ring active:text-black active:bg-Secondary-500/20"
     >
       <OverviewIcon class="w-6 h-6 mr-3" />
       Главная
     </router-link>
     <router-link
+
+    :class="{ '!bg-Secondary-500/5 !text-black': route.fullPath == '/task' }"
       class="py-3 mt-6 flex text-Secondary-300 items-center text-sm font-bold fill-current cursor-pointer rounded-xl px-4 duration-300 hover:bg-Secondary-500/5 focus:bg-Secondary-500/5 focus:outline-none focus:ring active:text-black active:bg-Secondary-500/20"
       to="/task"
     >
@@ -52,6 +64,8 @@ await loadUserData()
     <router-link
       class="py-3 mt-6 flex text-Secondary-300 items-center text-sm font-bold fill-current cursor-pointer rounded-xl px-4 duration-300 hover:bg-Secondary-500/5 focus:bg-Secondary-500/5 focus:outline-none focus:ring active:text-black active:bg-Secondary-500/20"
       to="/settings"
+    :class="{ '!bg-Secondary-500/5 !text-black': route.fullPath.includes('/settings') }"
+      
     >
       <SettingsIcon class="w-6 h-6 mr-3" />
       Настройки
@@ -60,8 +74,13 @@ await loadUserData()
 </template>
 
 <style scoped>
-.router-link-exact-active {
+/* .router-link-exact-active {
   @apply !bg-Secondary-500/5;
   @apply !text-black;
-}
+} */
+/* .router-link-active {
+  @apply !bg-Secondary-500/5;
+
+} */
 </style>
+<!-- TODO: Проблема с линком -->

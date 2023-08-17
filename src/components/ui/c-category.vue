@@ -9,8 +9,8 @@ defineProps({
 <template>
     <button class="px-7 h-12 py-3.5 border border-[#F5F5F7] rounded-xl text-xs items-center flex w-max ">
         <div>
-            <slot>
-                {{ img }}
+            <slot name="img">
+                 <img src="{{ img }}" alt=""> 
             </slot>
         </div>
         <div class="pl-3 text-center">

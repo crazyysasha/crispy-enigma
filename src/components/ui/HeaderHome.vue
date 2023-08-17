@@ -2,11 +2,6 @@
 import NotificationIcon from '/src/assets/icons/notification.vue'
 import UserAvatarIcon from '/src/assets/icons/user_avatar.vue'
 import CCircle from '/src/components/ui/c-circle.vue'
-import SearchIcon from '/src/assets/icons/search_normal.vue'
-import CCategory from '/src/components/ui/c-category.vue'
-import CSearch from '/src/components/ui/c-search.vue'
-import ElementIcon from '/src/assets/icons/element_1.vue'
-import CToggle from './c-toggle.vue'
 
 defineProps({
   label: {},
@@ -41,10 +36,10 @@ await loadUserData()
       </div>
     </div>
     <div class="justify-between items-center flex pr-8 pt-6">
-      <div>
         <slot name="search"> </slot>
+        <div class="justify-between gap-6 flex">
+        <slot name="category"></slot>
       </div>
-      <slot name="category"></slot>
-    </div>
+      </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[12.125rem] h-[13.375rem] p-5 bg-Secondary-500 text-white rounded-xl">
+  <div class="w-[12.125rem] h-[13.375rem] min-w-min p-5 bg-Secondary-500 text-white rounded-xl">
     <div class="font-semibold text-base">Running Task</div>
     <div class="mt-4 text-4xl">399</div>
     <div class="flex items-center">

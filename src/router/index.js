@@ -30,16 +30,17 @@ const router = createRouter({
         {
           path: 'settings',
           name: 'settings',
-          component: () => import('../views/SettingsGeneralView.vue'),
+          component: () => import('../views/settings/MainView.vue'),
           children: [
             {
               path: '',
-              component: () => import('../views/SettingsGeneralView.vue')
+              name: 'general',
+              component: () => import('../views/settings/GeneralView.vue')
             },
             {
               path: 'notifications',
               name: 'notifications',
-              component: () => import('../views/SettingsNotificationView.vue')
+              component: () => import('../views/settings/NotificationView.vue')
             }
           ]
         }

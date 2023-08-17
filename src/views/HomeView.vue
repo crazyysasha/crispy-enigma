@@ -9,6 +9,8 @@ import CSearch from '../components/ui/c-search.vue'
 import HeaderHomeLoading from '../components/loadingcomp/HeaderHomeLoading.vue'
 import TaskCarouselItemLoading from '/src/components/loadingcomp/carousel-itemLoading.vue'
 import SLine from '/src/components/ui/loadingitems/s-line.vue'
+import CCategory from '/src/components/ui/c-category.vue'
+import ElementIcon from '/src/assets/icons/element_1.vue'
 </script>
 <template>
   <div class="flex w-full">
@@ -62,6 +64,44 @@ import SLine from '/src/components/ui/loadingitems/s-line.vue'
               <TaskCarouselItemLoading />
             </template>
           </Suspense>
+        </div>
+        <div class="flex flex-col gap-5 w-full">
+        <Suspense>
+          <template #default>
+            <p class="font-semibold text-2xl">Mentors</p>
+          </template>
+          <template #fallback>
+            <SLine />
+          </template>
+        </Suspense>
+        <div
+          class="overflow-x-auto rounded-xl w-full max-w-full items-start gap-8 flex-nowrap flex"
+        >
+          <Suspense>
+            <template #default>
+              <TaskCarouselItem />
+            </template>
+            <template #fallback>
+              <TaskCarouselItemLoading />
+            </template>
+          </Suspense>
+          <Suspense>
+            <template #default>
+              <TaskCarouselItem />
+            </template>
+            <template #fallback>
+              <TaskCarouselItemLoading />
+            </template>
+          </Suspense>
+          <Suspense>
+            <template #default>
+              <TaskCarouselItem />
+            </template>
+            <template #fallback>
+              <TaskCarouselItemLoading />
+            </template>
+          </Suspense>
+        </div>
         </div>
       </div>
     </div>
