@@ -10,6 +10,7 @@ import SortIcon from '../assets/icons/sort.vue'
 import SLine from '../components/ui/loadingitems/s-line.vue'
 import SSearch from '../components/ui/loadingitems/s-search.vue'
 import SCategory from '../components/ui/loadingitems/s-category.vue'
+import CLabel from '../components/ui/c-label.vue'
 </script>
 <template>
 <div>
@@ -46,7 +47,14 @@ import SCategory from '../components/ui/loadingitems/s-category.vue'
     </Suspense>
       <div>
       <div>
-        <p class="font-semibold text-2xl mt-6">Time Limit</p>
+        <Suspense>
+          <template #default>
+            <CLabel class="mt-6" label="Дедлайны" />
+          </template>
+          <template #fallback>
+            <SLine class="h-8 mt-6 w-[164px] animate-pulse" />
+          </template>
+        </Suspense>
         <div class="mt-5 items-start gap-8 flex-nowrap flex scrolling-touch overflow-x-auto">
           <Suspense>
             <template #default>
@@ -74,7 +82,14 @@ import SCategory from '../components/ui/loadingitems/s-category.vue'
           </Suspense>
         </div>
         <div>
-          <p class="font-semibold text-2xl mt-6">New Task</p>
+          <Suspense>
+          <template #default>
+            <CLabel class="mt-6" label="Новые Задачи" />
+          </template>
+          <template #fallback>
+            <SLine class="h-8 mt-6 w-[164px] animate-pulse" />
+          </template>
+        </Suspense>
           <div class="mt-5 items-start gap-8 flex-nowrap flex scrolling-touch overflow-x-auto">
             <Suspense>
             <template #default>

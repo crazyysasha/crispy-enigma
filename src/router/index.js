@@ -28,6 +28,11 @@ const router = createRouter({
           component: () => import('../views/MentorsView.vue')
         },
         {
+          path: 'extend',
+          name: 'extend',
+          component: () => import('../views/ExtendedTaskView.vue')
+        },
+        {
           path: 'settings',
           name: 'settings',
           component: () => import('../views/settings/MainView.vue'),
@@ -94,5 +99,6 @@ const router = createRouter({
     }
   ]
 })
+
 
 export default router

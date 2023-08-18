@@ -26,6 +26,7 @@ const loadUserData = async () => {
 await loadUserData()
 </script>
 <template>
+  <router-link :to="{name: 'extend'}">
   <div class="bg-white p-6 rounded-xl max-w-sm flex-none">
     <img src="/src/assets/temps/task-1.png" alt="" class="w-full rounded-xl" />
     <div>
@@ -52,4 +53,5 @@ await loadUserData()
       </div>
     </div>
   </div>
+</router-link>
 </template>

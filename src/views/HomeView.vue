@@ -13,6 +13,7 @@ import CCategory from '/src/components/ui/c-category.vue'
 import ElementIcon from '/src/assets/icons/element_1.vue'
 import SProgressWidget from '../components/ui/loadingitems/s-progressWidget.vue'
 import SActivity from '../components/ui/loadingitems/s-activity.vue'
+import CLabel from '../components/ui/c-label.vue'
 </script>
 <template>
   <div class="flex w-full">
@@ -27,7 +28,7 @@ import SActivity from '../components/ui/loadingitems/s-activity.vue'
         </template>
       </Suspense>
       <div class="flex mt-11 gap-8">
-        <Suspense>
+        <Suspense >
           <template #default>
             <CProgressWidget />
           </template>
@@ -47,10 +48,10 @@ import SActivity from '../components/ui/loadingitems/s-activity.vue'
       <div class="flex flex-col gap-5 w-full">
         <Suspense>
           <template #default>
-            <p class="font-semibold text-2xl">Recent Mentors</p>
+            <CLabel label="Недавние Ментаты" />
           </template>
           <template #fallback>
-            <SLine />
+            <SLine class="h-8 w-[220px] animate-pulse" />
           </template>
         </Suspense>
         <div
@@ -84,10 +85,10 @@ import SActivity from '../components/ui/loadingitems/s-activity.vue'
         <div class="flex flex-col gap-5 w-full">
         <Suspense>
           <template #default>
-            <p class="font-semibold text-2xl">Mentors</p>
+            <CLabel label="Ментаты" />
           </template>
           <template #fallback>
-            <SLine />
+            <SLine class="h-8 w-[102px] animate-pulse" />
           </template>
         </Suspense>
         <div
