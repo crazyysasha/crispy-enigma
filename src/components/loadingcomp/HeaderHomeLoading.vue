@@ -1,6 +1,7 @@
 <script setup>
 import CCircle from '/src/components/ui/c-circle.vue'
-// import AvatarPath from '/src/assets/icons/element_1.svg'
+import SSearch from '../ui/loadingitems/s-search.vue';
+import SCategory from '../ui/loadingitems/s-category.vue';
 </script>
 
 <!-- <template>
@@ -35,14 +36,18 @@ import CCircle from '/src/components/ui/c-circle.vue'
           class="w-60 h-4 left-0 top-[26px] mt-2 bg-indigo-500 bg-opacity-10 rounded-2xl justify-start items-center inline-flex"
         ></div>
       </div>
-      <CToggle />
       <div class="flex items-center mr-8">
         <CCircle class="mr-8"> </CCircle>
         <CCircle> </CCircle>
       </div>
     </div>
     <div class="justify-between items-center flex pr-8 pt-6">
-      <div></div>
+      <slot name="searchload" >
+      </slot>
+      <div class="justify-between gap-6 flex">
+        <slot name="categoryload">
+        </slot>
+      </div>
     </div>
   </div>
 </template>

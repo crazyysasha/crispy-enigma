@@ -1,3 +1,14 @@
+<script setup>
+const loadUserData = async () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve()
+    }, 3000)
+  })
+}
+await loadUserData()
+</script>
+
 <template>
   <div class="w-[12.125rem] h-[13.375rem] min-w-min p-5 bg-Secondary-500 text-white rounded-xl">
     <div class="font-semibold text-base">Running Task</div>

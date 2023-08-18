@@ -7,6 +7,8 @@ import TaskCarouselItemLoading from '/src/components/loadingcomp/carousel-itemLo
 import CCategory from '../components/ui/c-category.vue';
 import ElementIcon from '../assets/icons/element_1.vue'
 import SortIcon from '../assets/icons/sort.vue'
+import SCategory from '../components/ui/loadingitems/s-category.vue';
+import SSearch from '../components/ui/loadingitems/s-search.vue';
 </script>
 <template>
 <div>
@@ -31,7 +33,14 @@ import SortIcon from '../assets/icons/sort.vue'
         </HeaderHome>
     </template>
     <template #fallback>
-      <HeaderHomeLoading class="bg-white border-[#F5F5F7] border-b-2 h-[228px]" />
+      <HeaderHomeLoading class="bg-white border-[#F5F5F7] border-b-2 h-[226px]">
+        <template #searchload>
+          <SSearch class="w-[480px]"/>
+        </template>
+        <template #categoryload>
+          <SCategory class="w-[154.88px]" />
+        </template>
+        </HeaderHomeLoading>
     </template>
     </Suspense>
     <div>

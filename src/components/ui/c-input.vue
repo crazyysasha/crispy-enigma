@@ -23,7 +23,7 @@ const id = Math.floor(Math.random() * 100000000)
 <template>
   <label class="block text-gray-700 text-sm font-bold mb-2" :for="id">{{ label }}</label>
   <input
-    class="appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:ring-button_purple focus:ring-4 outline-3 outline outline-background"
+    class="w-96 h-12 px-5 py-4 bg-white rounded-lg border border-neutral-100 justify-between items-center gap-2.5 inline-flex"
     :id="id"
     :type="type"
     :placeholder="placeholder"

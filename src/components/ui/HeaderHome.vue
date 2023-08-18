@@ -12,7 +12,7 @@ const loadUserData = async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve()
-    }, 3000)
+    }, 2000)
   })
 }
 await loadUserData()

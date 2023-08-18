@@ -3,17 +3,15 @@ import CInput from '../components/ui/c-input.vue'
 </script>
 
 <template>
-  <form class="" action="">
+  <form class="flex flex-col items-center justify-center" action="">
     <div class="mb-4 mt-4">
       <c-input label="Логин" placeholder="xXx_DODO_xXx"></c-input>
     </div>
-    <div class="mb-4 mt-4">
       <c-input type="password" label="Пароль" placeholder="*******"></c-input>
 
-      <c-button> Войти </c-button>
-    </div>
+      <c-button class="my-6"> Войти </c-button>
   </form>
-  <div class="mt-8 col-auto">
+  <div class=" col-auto">
     <p>
       Нет аккаунта?
       <router-link
@@ -24,7 +22,7 @@ import CInput from '../components/ui/c-input.vue'
       >
     </p>
     <div class="items-center flex flex-col">
-      <div class="mt-6 w-20 h-1 rounded-xl bg-background"></div>
+      <div class="mt-6 w-20 h-1 rounded-xl bg-zinc-50"></div>
     </div>
     <div class="mt-6">
       <router-link class="text-Secondary-300 hover:text-Error-600" :to="{ name: 'reset' }" href="">

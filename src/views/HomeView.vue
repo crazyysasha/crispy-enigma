@@ -11,6 +11,8 @@ import TaskCarouselItemLoading from '/src/components/loadingcomp/carousel-itemLo
 import SLine from '/src/components/ui/loadingitems/s-line.vue'
 import CCategory from '/src/components/ui/c-category.vue'
 import ElementIcon from '/src/assets/icons/element_1.vue'
+import SProgressWidget from '../components/ui/loadingitems/s-progressWidget.vue'
+import SActivity from '../components/ui/loadingitems/s-activity.vue'
 </script>
 <template>
   <div class="flex w-full">
@@ -21,12 +23,26 @@ import ElementIcon from '/src/assets/icons/element_1.vue'
           </HeaderHome>
         </template>
         <template #fallback>
-          <HeaderHomeLoading />
+          <HeaderHomeLoading class="h-[184px]" />
         </template>
       </Suspense>
       <div class="flex mt-11 gap-8">
-        <CProgressWidget />
-        <CActivity />
+        <Suspense>
+          <template #default>
+            <CProgressWidget />
+          </template>
+          <template #fallback>
+            <SProgressWidget />
+          </template>
+        </Suspense>
+        <Suspense>
+          <template #default>
+            <CActivity />
+          </template>
+          <template #fallback>
+            <SActivity />
+          </template>
+        </Suspense>
       </div>
       <div class="flex flex-col gap-5 w-full">
         <Suspense>
@@ -105,11 +121,11 @@ import ElementIcon from '/src/assets/icons/element_1.vue'
         </div>
       </div>
     </div>
-    <div class="bg-[#F5F5F7] sticky h-full min-h-screen top-0">
+    <!-- <div class="bg-[#F5F5F7] sticky h-full min-h-screen top-0">
       <div class="p-8">
         <CCalendar />
         <CTaskToday class="mt-8" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>

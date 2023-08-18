@@ -1,5 +1,13 @@
 <script setup>
 import ArrowDownIcon from '/src/assets/icons/arrow-down.vue'
+const loadUserData = async () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve()
+    }, 3000)
+  })
+}
+await loadUserData()
 </script>
 <template>
   <div class="w-[28.875rem] h-[13.375rem] rounded-xl p-5 bg-[#F5F5F7]">
