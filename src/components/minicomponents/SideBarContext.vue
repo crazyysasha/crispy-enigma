@@ -4,7 +4,7 @@
 
 <template>
     <!-- <div class="bg-image rounded-xl flex flex-col gap-9  items-center w-60 h-72 text-white p-6"> -->
-    <div class="bg-no-repeat bg-cover bg-center rounded-xl flex flex-col gap-9  items-stretch w-[188px] text-white p-6 sidebar-bottom">
+    <div class="bg-no-repeat bg-cover bg-center rounded-xl flex flex-col gap-9   text-white p-6 sidebar-bottom">
         <div class="bg-circle">
             <!-- <img src="src/assets/images/questionlogo.png" alt=""> -->
         </div>

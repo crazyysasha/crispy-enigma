@@ -29,16 +29,16 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex flex-col gap-5">
+    <div class="bg-[#F5F5F7] flex flex-col gap-5 items-center w-[328px] text-[14px] rounded-lg p-2 ">
         <div class="flex gap-5">
             <!-- this slot is for putting pictures -->
            <slot></slot>
             <div>   
-                <h1 class="text-2xl font-bold">{{ name }}</h1>
-                <p>{{ job }}</p>
+                <h1 class="font-bold text-[1rem]">{{ name }}</h1>
+                <p class="text-[12px]">{{ job }}</p>
             </div>
-            <div class="p-4">
-                <button class="text-green-500">{{ fallow }}</button>
+            <div class="">
+                <button class="text-green-500 text-[14px]">{{ fallow }}</button>
             </div>
         </div>
         <slot name="portfolio"></slot>  

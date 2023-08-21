@@ -1,10 +1,10 @@
 <script setup>
 </script>
 <template>
-    <div class="flex  flex-col gap-10">
-        <div class="flex text-3xl font-bold justify-between ">
+    <div class="flex  flex-col ">
+        <div class="flex text-[24px] font-bold justify-between ">
             <slot></slot>
-            <div class="flex gap-10">
+            <div class="flex gap-2 w-6 aspect-square">
                 <button>&#10094;</button>
                 <button>&#x276F;</button>
             </div>
