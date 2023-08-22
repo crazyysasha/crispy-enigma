@@ -29,7 +29,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="bg-[#F5F5F7] flex flex-col gap-5 items-center w-[328px] text-[14px] rounded-lg p-2 ">
+    <div class="bg-[#F5F5F7] flex flex-col gap-5 items-center w-[328px] text-[14px] rounded-lg p-2 shadow-xl ">
         <div class="flex gap-5">
             <!-- this slot is for putting pictures -->
            <slot></slot>

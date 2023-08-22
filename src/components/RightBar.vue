@@ -4,7 +4,7 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
 </script>
 
 <template>
-    <aside class="flex flex-col gap-12 p-5 font-PlusJakartaSans max-w-[27.25rem]  items-stretch  bg-[#F5F5F7] overflow-auto">
+    <aside class="flex flex-col gap-7 p-5 font-PlusJakartaSans max-w-[27.25rem]  items-stretch  bg-[#F5F5F7] overflow-auto">
         <div class="flex flex-col text-sm font-bold  bg-white rounded-md ">
             <div class="flex p-6 justify-between">   
                 <button>&#10094;</button>
@@ -21,7 +21,7 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
                 <CarouselCalendar days="16" Daysof-The-Week="S"></CarouselCalendar>
             </div>
         </div>
-        <div class="flex flex-col bg-white rounded-md p-8">
+        <div class="flex flex-col bg-white rounded-md p-8 ">
             <div class="flex text-sm font-bold  justify-between p-[1.5rem]">
                 <p>Task</p>
                 <button> 

@@ -7,19 +7,23 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
 <template>
     <main class="flex flex-col items-stretch">
        <ExploreTask text="Explore Task" category="Category" sort="Sort By : Deadline">
-            <img src="src/assets/images/Dashboardpictures/Notification.png" alt="" class="w-8">
-            <template #slot3><img src="src/assets/images/Dashboardpictures/Profil.png" alt="" class="w-16"></template>
-            <template #slot4><img src="src/assets/images/TaskPictures/search-normal.png" alt="" class="w-8"></template>
-            <template #slot5> <img src="src/assets/images/TaskPictures/element-1.png" alt=""></template>
-            <template #slot6><img src="src/assets/images/TaskPictures/sort.png" alt="" class="w-16"></template>
+            <img src="src/assets/images/Dashboardpictures/Notification.png" alt="" class="w-[24px]">
+            <template #slot3><img src="src/assets/images/Dashboardpictures/Profil.png" alt="" class="w-[48px]"></template>
+            <template #slot4>
+                <img src="src/assets/images/TaskPictures/search-normal.png" alt="" class="w-[20px]">
+            </template>
+            <template #slot5>
+                 <img src="src/assets/images/TaskPictures/element-1.png" alt="" class="w-[24px]">
+            </template>
+            <template #slot6><img src="src/assets/images/TaskPictures/sort.png" alt="" class="w-[24px]"></template>
        </ExploreTask>
+       <div class="bg-[#FAFAFA] rounded-xl">
        <div class=" p-8">
             <CarouselButton>
              <h1>Time Limit</h1>
             </CarouselButton>
-       </div>
        <div class="flex-1 flex flex-col items-center">
-            <div class="flex  gap-96 p-8">
+            <div class="flex">
                 <CarouselItems whatdoing="Creating Awesome Mobile Apps" whatjob="UI UX Design" lastseen="1 Hour">
                     <img src="src/assets/images/TaskPictures/Image(5).png" alt="" class="max-w-lg">
                     <template #slot2>
@@ -39,6 +43,7 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
                     </template>
                 </CarouselItems>
             </div>
+        </div>
         </div>
              <CarouselButton>
                 <h1>New Task</h1>
@@ -65,5 +70,6 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
                 </CarouselItems>
             </div>
         </div>
+       </div>
     </main>
 </template>
