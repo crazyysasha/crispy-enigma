@@ -47,7 +47,7 @@ import MentorsPart from './minicomponents/MentorsPart.vue';
                 </div>
             </div>
         </div>
-        <h1 class="text-3xl font-bold p-8">Mentors</h1>
+        <h1 class="text-[26px] font-bold p-8">Mentors</h1>
         <div class="flex flex-col gap-10 items-stretch">                       
             <MentorsPart></MentorsPart>
         </div>
