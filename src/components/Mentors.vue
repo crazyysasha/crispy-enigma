@@ -6,14 +6,21 @@ import MentorsPart from './minicomponents/MentorsPart.vue';
 </script>
 
 <template>
-    <div class="flex flex-col items-stretch ">
+    <div>
         <div class="bg-white">
             <ExploreTask text="Explore Mentors" category="Category" sort="Sort By : Popular">
-                <img src="src/assets/images/Dashboardpictures/Notification.png" alt="" class="w-8">
-                <template #slot3><img src="src/assets/images/Dashboardpictures/Profil.png" alt="" class="w-16"></template>
-                <template #slot4><img src="src/assets/images/TaskPictures/search-normal.png" alt="" class="w-8"></template>
-                <template #slot5> <img src="src/assets/images/TaskPictures/element-1.png" alt=""></template>
-                <template #slot6><img src="src/assets/images/TaskPictures/sort.png" alt="" class="w-16"></template>
+                <img src="src/assets/images/Dashboardpictures/Notification.png" alt="" class="w-[24px]">
+                <template #slot3>
+                    <img src="src/assets/images/Dashboardpictures/Profil.png" alt="" class="w-[48px]">
+                </template>
+                <template #slot4>
+                    <img src="src/assets/images/TaskPictures/search-normal.png" alt="" class="w-[20px]">
+                </template>
+                <template #slot5> 
+                    <img src="src/assets/images/TaskPictures/element-1.png" alt="" class="w-[24px]"></template>
+                <template #slot6>
+                    <img src="src/assets/images/TaskPictures/sort.png" alt="" class="w-[24px]">
+                </template>
             </ExploreTask>
         </div>
         <div class="p-8">
@@ -25,17 +32,17 @@ import MentorsPart from './minicomponents/MentorsPart.vue';
             <div class=" flex p-8 justify-between">
                 <div class="bg-white rounded-xl">
                     <CarouselUsers name="Jessica Jane" job="Web Developer" fallow="+ Follow" task="40 Task" reviews="4,7  (750 Reviews)">
-                        <img src="src/assets/images/Mentorspictures/JessicaJane.png" alt="">
+                        <img src="src/assets/images/Mentorspictures/JessicaJane.png" alt="" class="w-[48px]">
                     </CarouselUsers>
                 </div>
                 <div class="bg-white rounded-xl">
                     <CarouselUsers name="Abraham Lincoln" job="3D Design" task="32 Task" fallow="Followed" reviews="4,9  (510 Reviews)">
-                        <img src="src/assets/images/Dashboardpictures/AbrahamLincoln.png" alt="AbrahamLincoln">
+                        <img src="src/assets/images/Dashboardpictures/AbrahamLincoln.png" alt="AbrahamLincoln" class="w-[48px]">
                     </CarouselUsers>
                 </div>
                 <div class="bg-white rounded-xl">
                     <CarouselUsers name="Curious George" job="UI UX Design" fallow="+ Follow " reviews="4,7  (750 Reviews)" task="40 Task">
-                        <img src="src/assets/images/Dashboardpictures/CuriousGeorge.png" alt="CuriousGeorge.png">
+                        <img src="src/assets/images/Dashboardpictures/CuriousGeorge.png" alt="CuriousGeorge.png" class="w-[48px]">
                     </CarouselUsers>
                 </div>
             </div>
