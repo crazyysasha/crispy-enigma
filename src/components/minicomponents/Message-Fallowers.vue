@@ -21,7 +21,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex rounded-xl bg-[#FAFAFA] border-2 gap-3 text-[14px]">
+    <div class="flex rounded-xl bg-[#FAFAFA] border-2 gap-3 text-[14px] p-2">
         <!--this is where users put a picture -->
         <slot></slot>
         <div class="flex flex-col gap-5">
