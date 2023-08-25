@@ -2,15 +2,48 @@
 </script>
 
 <template>
-    <div class="text-[14px] bg-[#F5F5F7] flex flex-col pr-[32px] pl-[48px] items-stretch">
-        <div class="flex flex-col items-center">
+    <div class="text-[14px] grid p-8">
+        <div class="rounded-xl place-self-center flex items-center flex-col bg-[#141522] text-white w-[68px] gap-[12px]">
             <h1 class="text-[14px] font-bold">Today</h1>
+        </div> 
+        <div class="place-self-end rounded-l-[10px] rounded-br-[10px] bg-[#546FFF] w-[291px] text-white ">
+            <p>Morning Angelie, I have question about My Task</p>
         </div>
-        <div class="flex items-end bg-[#546FFF] rounded-l-[10px] rounded-br-[10px] w-[303px] gap-10">
-            <p>Morning Angelie, I have question about My <br> Task</p>
-        </div>
-        <div class="flex flex-col justify-start">
+        <div class="place-self-start bg-white rounded-r-[10px] rounded-bl-[10px]">
             <p>Yes sure, Any problem with your assignment?</p>
+        </div>
+        <div class="text-[12px]">
+            <p>Today 11:53</p>
+        </div>
+        <div class="flex flex-col gap-[7px]">
+            <div class=" flex flex-col gap-[12px] place-self-end bg-[#546FFF] py-[8px] px-[12px] rounded-l-[10px] rounded-br-[10px]">
+                <img src="src/assets/images/TaskPictures/Image(9).png" alt="" class="w-[372px] h-[141px]">
+                <p class="text-white text-[12px]">How to make a responsive display from the dashboard?</p>
+            </div>
+            <div class="place-self-end bg-[#546FFF] rounded-l-[10px] rounded-br-[10px] text-[12px] text-white">
+                <p>Is there a plugin to do this task?</p>
+            </div>
+            <div class="text-[12px] place-self-end">
+                <p>Today 11:52</p>
+            </div>
+        </div>
+        <div class="flex  gap-[7px] flex-col text-[12px]">
+            <div class=" rounded-r-[10px] rounded-bl-[10px] bg-white  w-[302px] p-[12px]">
+                <div>
+                    <p>No plugins. You just have to make it <br> smaller according to the size of the phone.</p>
+                </div>
+            </div>  
+            <div class="rounded-r-[10px] rounded-bl-[10px] bg-white  w-[302px] p-[12px]">
+                <div>
+                    Thank you very much. I'm glad you asked about the assignment
+                </div>
+            </div>
+            <div>
+                <p>Today 11:53</p>
+            </div>
+        </div>
+        <div class="bg-white">
+            <input type="text" placeholder="Send your message" class="text-[14px]">
         </div>
     </div>
 </template>

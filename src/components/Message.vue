@@ -45,7 +45,7 @@ import MessageChat from './minicomponents/MessageChat.vue';
                             <img src="src/assets/images/Messagepictures/AngelKimberly.png" alt="" class="w-[48px] aspect-square">
                         </MessageFallowers>
                     </div>
-                    <div class="flex-1 items-center">
+                    <div class="bg-[#F5F5F7]">
                         <MessagePeople name="Angelie Crison" online="Online"></MessagePeople>
                         <MessageChat></MessageChat>
                     </div>

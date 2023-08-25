@@ -17,7 +17,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex pr-[32px] pl-[48px]  gap-[416px] text-[14px]">
+    <div class="flex pr-[32px] pl-[48px]  gap-[416px] text-[14px bg-white">
         <div class="flex gap-[12px]">
             <div>
                 <img src="src/assets/images/Messagepictures/AngelieCrison.png" alt="Angelie Crison" class="w-[48px]">
