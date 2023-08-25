@@ -11,6 +11,10 @@ module.exports = {
       ...theme('colors'),
       auto: 'auto',
     }),
+    lineHeight: {
+      'extra-loose': '2.5',
+      '12': '3rem',
+    },
     animation: {
       none: 'none',
       spin: 'spin 1s linear infinite',

@@ -42,8 +42,18 @@
                 <p>Today 11:53</p>
             </div>
         </div>
-        <div class="bg-white">
-            <input type="text" placeholder="Send your message" class="text-[14px]">
+        <div class="bg-white flex justify-between h-[80px] leading-[150%]">
+            <div class="w-[137px] h-[21px] font-normal pt-[26px] pb-[36px] pl-[30px] pr-[621px] ">
+                <input type="text" placeholder="Send your message" class="">
+            </div>  
+            <div class="flex items-center gap-[12px] pr-[32px]">
+                <div class="w-[24px]">
+                <img src="src/assets/images/Messagepictures/attach-circle.png" alt="" class="">
+                </div>
+                <div class="bg-[#546FFF] rounded-[10px] items-center flex p-[8px]">
+                    <img src="src/assets/images/Messagepictures/send-2.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </template>

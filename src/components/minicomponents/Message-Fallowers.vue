@@ -21,19 +21,23 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex rounded-xl bg-[#FAFAFA] border-2 gap-3 text-[14px] p-2">
+    <div class="grid">
+    <div class="flex rounded-xl bg-[#FAFAFA] border-2 gap-3 text-[14px] p-1 items-stretch">
         <!--this is where users put a picture -->
         <slot></slot>
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-[12px]">
             <div class="flex  justify-between">
                 <h1 class="font-bold">{{ name }}</h1>
                 <p class="text-[#8E92BC]">{{ lastseen }}</p>
             </div>
-            <div class="flex gap-5 items-center">
-                <p>{{comment}}</p>
+            <div class="flex items-center">
+                <p class="leading-normal">{{ comment }}</p>
+                <div>
                 <p class="circle"></p>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 </template>
 

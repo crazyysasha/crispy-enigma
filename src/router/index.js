@@ -37,6 +37,11 @@ const router = createRouter({
           path:'message',
           name:'Message',
           component:()=>import('../views/MessageView.vue')
+        },
+        {
+          path:'settings',
+          name:'Settings',
+          component:()=>import('../views/SettingsView.vue')
         }
       ]
     },
