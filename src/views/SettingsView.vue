@@ -14,7 +14,7 @@ import ConfigurationSettings from '../components/minicomponents/Configuration-Se
                     <img src="src/assets/images/Dashboardpictures/Profil.png" alt="" class="w-16">
                 </div>
             </div>
-            <div class="flex flex-col bg-[#FAFAFA] h-full">
+            <div class="flex flex-col bg-[#FAFAFA] h-full pt-[20px] pl-[32px]">
                     <ConfigurationSettings>   </ConfigurationSettings>
             </div>
         </div>  
