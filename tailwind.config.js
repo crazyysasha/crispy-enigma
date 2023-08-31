@@ -6,7 +6,17 @@ module.exports = {
   ],
   presets: [],
   darkMode: 'media', // or 'class'
-  theme: {
+  theme:
+   {
+    keyframes:{
+      wiggle:{
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+      }
+    },
+    animation:{
+      'spin-slow': 'spin 3s linear infinite',
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
