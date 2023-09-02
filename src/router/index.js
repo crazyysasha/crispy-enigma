@@ -42,6 +42,11 @@ const router = createRouter({
           path:'settings',
           name:'Settings',
           component:()=>import('../views/SettingsView.vue')
+        },
+        {
+          path:'exmp',
+          name:'Swiper',
+          component:()=>import('../views/SwiperExample.vue')
         }
       ]
     },

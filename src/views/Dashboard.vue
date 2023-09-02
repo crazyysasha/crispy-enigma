@@ -1,6 +1,7 @@
 <script setup>
 import RightBar from '../components/RightBar.vue';
 import DashboardContext from '../components/minicomponents/DashboardContext.vue';
+import DashboardContextBtm from '../components/minicomponents/DashboardContextBtm.vue';
 defineProps({
     UpcomingTaks:{
     type:String,
@@ -11,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-    <main class="flex overflow-auto  bg-[#FAFAFA] text-[1rem]">
+    <main class="flex overflow-auto  bg-[#FAFAFA] text-[1rem]  max-w-[800px]">
         <div class="font-PlusJakartaSans flex flex-col justify-between  max-w-full text-lg  overflow-y-auto overflow-x-hidden bg-white">
             <div class="flex justify-between p-8">
                 <div class="flex flex-col gap-4">
@@ -50,7 +51,8 @@ defineProps({
                     <img src="src/assets/images/Dashboardpictures/diagramma.svg" alt="">
                 </div>  
             </div>
-            <DashboardContext></DashboardContext>       
+            <DashboardContext></DashboardContext>  
+            <DashboardContextBtm></DashboardContextBtm>   
         </div>       
     </main>
     <RightBar></RightBar> 

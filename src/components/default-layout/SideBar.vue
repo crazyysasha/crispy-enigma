@@ -10,7 +10,7 @@ onMounted(()=>{
 </script>
 
 <template>
-     <aside class="font-PlusJakartaSans flex flex-col justify-between gap-8 p-6 text-[14px] overflow-y-auto overflow-x-hidden bg-white w-[252px]">
+     <aside class="font-PlusJakartaSans flex flex-col justify-between gap-8 p-8 text-[14px] overflow-y-auto overflow-x-hidden bg-white max-w-[252px]">
           <div class="flex gap-3 text-3xl font-bold">
                <img src="src/assets/images/FirstLinePictures/book-square.png" alt="">
                <a href="" class="fond-bold text-3xl ">Nuegas</a>

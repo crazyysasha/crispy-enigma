@@ -1,8 +1,12 @@
 <script setup>
 import CarouselCalendar from './minicomponents/Carousel-Calendar.vue';
 import CarouselItems from './minicomponents/Carousel-items.vue';
+import { register } from 'swiper/element/bundle';
+import { Swiper,SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+register();
 </script>
-
+<!-- I must make swiper-container -->
 <template>
     <aside class="flex flex-col gap-7 p-5 font-PlusJakartaSans max-w-[27.25rem]  items-stretch  bg-[#F5F5F7] overflow-auto">
         <div class="flex flex-col text-sm font-bold  bg-white rounded-md ">
@@ -30,12 +34,21 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
             </div>
             <div class="flex flex-col gap-6">
                 <div class="flex flex-col items-center">
-                    <CarouselItems whatdoing="Creating Awesome Mobile Apps" whatjob="UI /UX Designer" lastseen="1 Hour" class="text-xl">
-                        <img src="src/assets/images/RightBarPictures/Image(3).png" alt="" class="w-80 h-[10rem]">
-                        <template #slot2>
-                            <img src="src/assets/images/DashboardPictures/Userspictures2.svg" alt="" class="">
-                        </template>
-                    </CarouselItems>
+                    <swiper-container
+                    speed="500"
+                    loop="true"
+                    slides-per-view="4"
+                    css-mode="true"
+                    >
+                    <swiper-slide>
+                        <CarouselItems whatdoing="Creating Awesome Mobile Apps" whatjob="UI /UX Designer" lastseen="1 Hour" class="text-xl">
+                            <img src="src/assets/images/RightBarPictures/Image(3).png" alt="" class="w-80 h-[10rem]">
+                            <template #slot2>
+                                <img src="src/assets/images/DashboardPictures/Userspictures2.svg" alt="" class="">
+                            </template>
+                        </CarouselItems>
+                    </swiper-slide>
+                </swiper-container>
                 </div>
            <div class="flex flex-col text-center">
                 <div class="flex justify-between text-[1rem]">
