@@ -1,11 +1,15 @@
 <script setup>
 import ExploreTask from './minicomponents/ExploreTask.vue';
 import CarouselButton from './minicomponents/Carousel-button.vue';
+import ExploreTaskSw from './minicomponents/ExploreTaskSw.vue'
 import CarouselItems from './minicomponents/Carousel-items.vue';
+
+
+
 </script>
 <!-- Must do swiper -->
 <template>
-    <main class="flex flex-col items-stretch">
+    <div class="flex flex-col items-stretch">
        <ExploreTask text="Explore Task" category="Category" sort="Sort By : Deadline">
             <img src="src/assets/images/Dashboardpictures/Notification.png" alt="" class="w-[24px]">
             <template #slot3>
@@ -26,28 +30,7 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
                 <CarouselButton>
                     <h1>Time Limit</h1>
                 </CarouselButton>
-                <div class="flex-1 flex flex-col items-center">
-                    <div class="flex gap-[32px]">
-                        <CarouselItems whatdoing="Creating Awesome Mobile Apps" whatjob="UI UX Design" lastseen="1 Hour">
-                            <img src="src/assets/images/TaskPictures/Image(5).png" alt="" class="max-w-lg">
-                            <template #slot2>
-                                <img src="src/assets/images/Dashboardpictures/Userspictures.svg" alt="" class="w-[72px] aspect-square">
-                            </template>
-                        </CarouselItems>
-                        <CarouselItems whatdoing="Creating Fresh Website" whatjob="Web Developer" lastseen="2 Hour">
-                            <img src="src/assets/images/TaskPictures/Image(6).png" alt="" class="max-w-lg">
-                            <template #slot2>
-                                <img src="src/assets/images/Dashboardpictures/Userspictures.svg" alt="" class="w-[72px] aspect-square">
-                            </template>
-                        </CarouselItems>
-                        <CarouselItems whatdoing="Creating Color Palletes" whatjob="UI UX Design" lastseen="1 Hour">
-                            <img src="src/assets/images/TaskPictures/Image(7).png" alt="" class="max-w-lg">
-                            <template #slot2>
-                                <img src="src/assets/images/Dashboardpictures/Userspictures.svg" alt="" class="w-[72px] aspect-square">
-                            </template>
-                        </CarouselItems>
-                    </div>
-                </div>
+                <ExploreTaskSw></ExploreTaskSw>
             </div>   
             <div class="flex flex-col gap-[24px]">
                 <CarouselButton>
@@ -77,5 +60,5 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 </template>
