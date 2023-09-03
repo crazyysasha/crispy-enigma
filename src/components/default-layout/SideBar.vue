@@ -19,7 +19,7 @@ onMounted(()=>{
                <router-link
                :to="{name:'home'}"
                :class="{'!bg-white !text-black ': route.fullPath=='/'}"
-               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-bounce active:animate-none hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300"
+               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-pulse active:animate-none hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300"
                >
                     <div class="font-bold flex gap-4">
                          <img src="src/assets/images/FirstLinePictures/category-2.png" alt="">
@@ -29,7 +29,7 @@ onMounted(()=>{
               <router-link
                :to="{name:'Task'}"
                :class="{'!bg-white !text-black ': route.fullPath=='/'}"
-               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-bounce hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
+               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-pulse hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
                >
                <div class="flex gap-4">
                     <img src="src/assets/images/FirstLinePictures/book.png" alt="">
@@ -39,7 +39,7 @@ onMounted(()=>{
                <router-link
                :to="{name:'Mentors'}"
                :class="{'!bg-white !text-black ': route.fullPath=='/'}"
-               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-bounce  hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
+               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-pulse  hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
                >
                <div class="flex gap-4">
                     <img src="src/assets/images/FirstLinePictures/user-octagon.png" alt="">
@@ -49,7 +49,7 @@ onMounted(()=>{
                <router-link
                :to="{name:'Message'}"
                :class="{'!bg-white !text-black ': route.fullPath=='/'}"
-               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-bounce  hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
+               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-pulse  hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
                >
                <div class="flex gap-4">
                     <img src="src/assets/images/FirstLinePictures/message.png" alt="">
@@ -59,7 +59,7 @@ onMounted(()=>{
                <router-link
                :to="{name:'Settings'}"
                :class="{'!bg-white !text-black ': route.fullPath=='/'}"
-               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-bounce  hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
+               class="cursor-pointer font-extrabold rounded-[10px] hover:animate-pulse  hover:bg-[#F5F5F7] focus:outline-none focus:ring focus:ring-vilet-300 ring-offset-4 ring-gray-600 duration-300 "
                >
                <div class="flex gap-4">
                     <img src="src/assets/images/FirstLinePictures/setting-2.png" alt="" class="font-bold">
