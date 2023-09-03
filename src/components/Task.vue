@@ -2,7 +2,7 @@
 import ExploreTask from './minicomponents/ExploreTask.vue';
 import CarouselButton from './minicomponents/Carousel-button.vue';
 import ExploreTaskSw from './minicomponents/ExploreTaskSw.vue'
-import CarouselItems from './minicomponents/Carousel-items.vue';
+import ExploreTaskSwButton from './minicomponents/ExploreTaskSwButton.vue';
 
 
 
@@ -36,28 +36,7 @@ import CarouselItems from './minicomponents/Carousel-items.vue';
                 <CarouselButton>
                     <h1>New Task</h1>
                 </CarouselButton> 
-                <div class="flex flex-col items-center">
-                    <div class="flex gap-[32px]">
-                        <CarouselItems whatdoing="Creating Mobile App Design" whatjob="UI UX Design" lastseen="3 Days Left">
-                            <img src="src/assets/images/TaskPictures/Image(8).png" alt="" class="max-w-lg">
-                            <template #slot2>
-                                <img src="src/assets/images/Dashboardpictures/Userspictures.svg" alt="" class="w-[72px] aspect-square">
-                            </template>
-                        </CarouselItems>
-                        <CarouselItems whatdoing="Creating Perfect Website" whatjob="Web Developer" lastseen="4 Days Left">
-                            <img src="src/assets/images/TaskPictures/Image(9).png" alt="" class="max-w-lg">
-                            <template #slot2>
-                                <img src="src/assets/images/Dashboardpictures/Userspictures2.svg" alt="" class="w-[72px] aspect-square">
-                            </template>
-                        </CarouselItems>
-                        <CarouselItems whatdoing="Mobile App Design" whatjob="UI UX Design" lastseen="3 Days Left">
-                            <img src="src/assets/images/TaskPictures/Image(10).png" alt="" class="max-w-lg">
-                            <template #slot2>
-                                <img src="src/assets/images/Dashboardpictures/Userspictures.svg" alt="" class="w-[72px] aspect-square">
-                            </template>
-                        </CarouselItems>
-                    </div>
-                </div>
+                <ExploreTaskSwButton></ExploreTaskSwButton>
             </div>
         </div>
     </div>
