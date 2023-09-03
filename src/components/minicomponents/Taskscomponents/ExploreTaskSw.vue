@@ -2,7 +2,7 @@
 import {ref} from 'vue'
 import {Swiper,SwiperSlide} from 'swiper/vue'
 import 'swiper/css'
-import CarouselItems from './Carousel-items.vue';
+import CarouselItems from '../Carousel-items.vue';
 const onswiperTask=(swipertask)=>{
     console.log(swipertask)
 }

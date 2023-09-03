@@ -1,7 +1,7 @@
 <script setup>
-import MessageFallowers from '../components/minicomponents/Message-Fallowers.vue';
-import MessagePeople from '../components/minicomponents/Message-People.vue';
-import MessageChat from '../components/minicomponents/MessageChat.vue';
+import MessageFallowers from '../components/minicomponents/Messagecomponents/Message-Fallowers.vue';
+import MessagePeople from '../components/minicomponents/Messagecomponents/Message-People.vue';
+import MessageChat from '../components/minicomponents/Messagecomponents/MessageChat.vue';
 </script>
 
 <template>

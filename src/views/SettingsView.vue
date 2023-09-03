@@ -1,5 +1,5 @@
 <script setup>
-import ConfigurationSettings from '../components/minicomponents/Configuration-Settings.vue'
+import ConfigurationSettings from '../components/minicomponents/Settingscomponents/Configuration-Settings.vue'
 </script>
 
 <template>

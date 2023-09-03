@@ -1,7 +1,7 @@
 <script setup>
+// import CarouselCalendar from './minicomponents/Carousel-Calendar.vue';
 import CarouselCalendar from './minicomponents/Carousel-Calendar.vue';
-import CarouselItems from './minicomponents/Carousel-items.vue';
-import RightBarSwp from './minicomponents/RightBarSwp.vue';
+import RightBarSwp from './minicomponents/Dashboardcomponents/RightBarSwp.vue';
 
 </script>
 <!-- I must make swiper-container -->

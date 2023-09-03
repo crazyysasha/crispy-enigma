@@ -1,7 +1,7 @@
 <script setup>
 import RightBar from '../components/RightBar.vue';
-import DashboardContext from '../components/minicomponents/DashboardContext.vue';
-import DashboardContextBtm from '../components/minicomponents/DashboardContextBtm.vue';
+import DashboardContext from '../components/minicomponents/Dashboardcomponents/DashboardContext.vue';
+import DashboardContextBtm from '../components/minicomponents/Dashboardcomponents/DashboardContextBtm.vue';
 defineProps({
     UpcomingTaks:{
     type:String,

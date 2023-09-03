@@ -1,5 +1,5 @@
 <script setup >
-import CarouselItems from './Carousel-items.vue';
+import CarouselItems from '../Carousel-items.vue';
 import { register } from 'swiper/element/bundle';
 import { Swiper,SwiperSlide } from 'swiper/vue';
 import { EffectCards } from 'swiper/modules';

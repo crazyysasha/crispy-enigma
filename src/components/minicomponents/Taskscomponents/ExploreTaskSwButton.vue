@@ -2,7 +2,7 @@
 import {Swiper,SwiperSlide} from 'swiper/vue'
 import 'swiper/css'
 import {ref} from 'vue'
-import CarouselItems from './Carousel-items.vue';
+import CarouselItems from '../Carousel-items.vue';
 </script>
 
 <template>

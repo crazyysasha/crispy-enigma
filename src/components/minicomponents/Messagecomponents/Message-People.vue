@@ -1,6 +1,6 @@
 <script setup>
-import PhoneLogo from '../../assets/images/Messagepictures/PhoneLogo.vue';
-import VideoLogo from '../../assets/images/Messagepictures/VideoLogo.vue'
+import PhoneLogo from '../../../assets/images/Messagepictures/PhoneLogo.vue';
+import VideoLogo from '../../../assets/images/Messagepictures/VideoLogo.vue'
 import MessageChat from './MessageChat.vue';
 defineProps({
     name:{

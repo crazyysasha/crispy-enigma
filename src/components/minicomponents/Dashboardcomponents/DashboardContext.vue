@@ -1,6 +1,6 @@
 <script setup>
-import CarouselButton from './Carousel-button.vue';
-import CarouselUsers from './Carousel-Users.vue';
+import CarouselButton from '../Carousel-button.vue';
+import CarouselUsers from '../Carousel-Users.vue';
 import {Swiper,SwiperSlide} from 'swiper/vue';
 import 'swiper/css';
 import {ref} from 'vue'
