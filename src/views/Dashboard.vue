@@ -1,5 +1,5 @@
 <script setup>
-import RightBar from '../components/RightBar.vue';
+import RightBar from '../components/minicomponents/Dashboardcomponents/RightBar.vue';
 import DashboardContext from '../components/minicomponents/Dashboardcomponents/DashboardContext.vue';
 import DashboardContextBtm from '../components/minicomponents/Dashboardcomponents/DashboardContextBtm.vue';
 defineProps({

@@ -22,9 +22,11 @@ defineProps({
 
 <template>
     <div class="grid">
-    <div class="flex rounded-xl bg-[#FAFAFA] border-2 gap-3 text-[14px] p-1 items-stretch">
+        <div class="flex rounded-xl bg-[#FAFAFA] border-2 gap-3 text-[14px] p-1  items-center">
         <!--this is where users put a picture -->
+        <div>
         <slot></slot>
+        </div>
         <div class="flex flex-col gap-[12px]">
             <div class="flex  justify-between">
                 <h1 class="font-bold">{{ name }}</h1>
@@ -38,7 +40,7 @@ defineProps({
             </div>
         </div>
     </div>
-    </div>
+</div>
 </template>
 
 <style>

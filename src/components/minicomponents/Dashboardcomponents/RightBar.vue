@@ -1,10 +1,9 @@
 <script setup>
-// import CarouselCalendar from './minicomponents/Carousel-Calendar.vue';
-import CarouselCalendar from './minicomponents/Carousel-Calendar.vue';
-import RightBarSwp from './minicomponents/Dashboardcomponents/RightBarSwp.vue';
-
+import CarouselCalendar from '../Carousel-Calendar.vue';
+import RightBarSwp from '../Dashboardcomponents/RightBarSwp.vue';
 </script>
 <!-- I must make swiper-container -->
+
 <template>
     <aside class="flex flex-col gap-7 p-6 font-PlusJakartaSans max-w-[27.25rem]  items-stretch  bg-[#F5F5F7] overflow-auto">
         <div class="flex flex-col text-sm font-bold  bg-white rounded-md ">
